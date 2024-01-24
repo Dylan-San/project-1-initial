@@ -1,4 +1,5 @@
 # Project 1
+
 ### Objectives
 This assignment is designed just to get you going on the use of GitHub, IntelliJ, provide a review of basic Java concepts as well as introduce you to running Unit Tests.  This should be an easy 50 points for you.
 
@@ -10,7 +11,8 @@ This assignment is designed just to get you going on the use of GitHub, IntelliJ
 
 ### Details
 * Review Java programming basics paying close attention to creating custom classes.
-* Download the project template from https://github.com/UltimateSandbox/project-1-initial.git
+* Fork the project template from https://github.com/UltimateSandbox/project-1-initial.git
+* Clone your new project from https://github.com/
 
 Complete the following programming assignment:
 * Design & implement a class called Point that represents a location in the Cartesian plane.
@@ -48,7 +50,8 @@ The trick with this extra credit isn't just figuring out what to ask the AI - yo
 - Utilize Google to find the distance formula.
 - Make good use of whitespace and comments to make your implementation as clean as possible.
 - Use good, SOLID object-oriented programming principles (pun intended) in your implementation.
+
 ### Deliverables
 - Be sure you commit & push your code to GitHub.  If you don't push it, I won't be able to see it!
-- Make sure your repo is public, or I won't be able to see it.
+- Make sure your repo is **public**, or I won't be able to see it.
 - Copy the URL for your repo (green button on your GitHub repos' page) and paste it into the Website URL field in Canvas and click Submit Assignment!
