@@ -90,7 +90,6 @@ public class Point {
         // Restore the original coordinates of p1
         p1.restoreOriginalCoordinates();
         //Distance between p1 and p2
-        //System.out.println("Point 2: Point (x = " + p2.getX() + ", " + p2.getY() + ")");
 
         System.out.println("Distance between Point 1 and Point 2: " + p1.distance(p2));
         //System.out.println("Distance between Point 1 and Point 2: " + distance);
