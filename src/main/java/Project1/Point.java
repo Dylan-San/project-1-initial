@@ -2,20 +2,27 @@ package Project1;
 
 //Class Point
 public class Point {
-    //Declaration of double x and y
-    public double x;
-    public double y;
-    //Constructor
-    public Point(double x, double y) {
-        this.x = x;
-        this.y = y;
+        //Declaration of double x and y
+        private double x;
+        private double y;
+
+        //Constructor
+        public Point(double x, double y) {
+            this.x = x;
+            this.y = y;
     }
-    //X standard setter
-    public void setX(double x) {
-        this.x = x;
+
+        //X standard setter
+        public void setX(double x2) {
+            this.x = x2;
     }
-    //Y standard setter
-    public void setY(double y) {
+        //Y standard setter
+        public void setY(double y2) {
+            this.y = y2;
+    }
+    //Set Point
+    public void setPoint(double x, double y) {
+        this.x = x;
         this.y = y;
     }
     //X standard getter
@@ -26,11 +33,7 @@ public class Point {
     public double getY() {
         return y;
     }
-    //Set Point
-    public void setPoint(double x, double y) {
-        this.x = x;
-        this.y = y;
-    }
+
     //Shift X
     public void shiftX(double n) {
         this.x += n;
@@ -53,27 +56,31 @@ public class Point {
         y = newY;
     }
 
+
+
     public static void main(String[] args) {
 
+        //Creating an instance of the Point class
         Point point1 = new Point(3.0, 1.0);
-        Point point2 = new Point(6.0, 5.0);
 
         System.out.println("Project 1 : Point Tester");
         System.out.println();//Skips line
         System.out.println("Point 1: Point (x = " + point1.getX() + ", " + point1.getY() + ")");
-        System.out.println("Point 2: Point (x = " + point2.getX() + ", " + point2.getY() + ")");
+        System.out.println();//Skips line
+        point1.shiftX(3.0);
+        point1.shiftY(4.0);
+        System.out.println("Point 2: Point (x = " + point1.getX() + ", " + point1.getY() + ")");
+        System.out.println();//Skips line
 
+        Point p2 = new Point(point1.getX(), point1.getY());
         //Distance between p1 and p2
-        double distance = point1.distance(point2);
+
+        double distance = point1.distance(p2);
+
         System.out.println("Distance between Point 1 and Point 2: " + distance);
+        //System.out.println("Distance between Point 1 and Point 2: " + distance);
         // Shifting point1 along the x-axis
-        point1.shiftX(2.0);
+        System.out.println();//Skips line
 
-        // Shifting point2 along the y-axis
-        point2.shiftY(3.0);
-
-        // Displaying updated coordinates
-        System.out.println("Updated Point 1 Coordinates: (" + point1.getX() + ", " + point1.getY() + ")");
-        System.out.println("Updated Point 2 Coordinates: (" + point2.getX() + ", " + point2.getY() + ")");
     }
 }

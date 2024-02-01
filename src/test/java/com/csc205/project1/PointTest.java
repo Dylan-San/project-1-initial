@@ -1,5 +1,6 @@
 package com.csc205.project1;
 
+import Project1.Point;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
