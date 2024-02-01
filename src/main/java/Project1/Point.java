@@ -6,7 +6,7 @@ public class Point {
         private double x;
         private double y;
         // Variables to store original coordinates
-         private double originalX;
+        private double originalX;
         private double originalY;
         // Constructor
         public Point(double x, double y) {
