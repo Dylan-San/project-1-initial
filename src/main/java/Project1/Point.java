@@ -8,9 +8,7 @@ public class Point {
         // Variables to store original coordinates
          private double originalX;
         private double originalY;
-
-
-    //Constructor
+        // Constructor
         public Point(double x, double y) {
             this.x = x;
             this.y = y;
@@ -71,8 +69,6 @@ public class Point {
         y = originalY;
     }
 
-
-
     public static void main(String[] args) {
 
         //Creating an instance of the Point class
@@ -100,6 +96,14 @@ public class Point {
         //System.out.println("Distance between Point 1 and Point 2: " + distance);
         // Shifting point1 along the x-axis
         System.out.println();//Skips line
+        // Rotate the point by a specified angle (in radians)
+        double rotationAngle = Math.PI / 2.0; // Rotate by 45 degrees (pi/4 radians)
+        p2.rotate(rotationAngle);
+
+        // Display coordinates after rotation
+        System.out.println("Rotated by PI/2");
+        System.out.println();//Skips line
+        System.out.println("Point Coordinates after Rotation: (" + p2.getX() + ", " + p2.getY() + ")");
 
     }
 }
