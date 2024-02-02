@@ -71,28 +71,28 @@ public class Point {
 
     public static void main(String[] args) {
 
-        //Creating an instance of the Point class
-        Point p1 = new Point(3.0, 1.0);
-        // Save the original coordinates of p1
-        p1.saveOriginalCoordinates();
+            Point point = new Point(0.0, 0.0);
+            //Creating an instance of the Point class
+            point.setPoint(3.0, 1.0);
+            // Save the original coordinates of p1
+            point.saveOriginalCoordinates();
 
-        System.out.println("Project 1 : Point Tester");
-        System.out.println();//Skips line
-        System.out.println("Point 1: Point (x = " + p1.getX() + ", " + p1.getY() + ")");
-        System.out.println();//Skips line
-        p1.shiftX(3.0);
-        p1.shiftY(4.0);
-        System.out.println("Point 2: Point (x = " + p1.getX() + ", " + p1.getY() + ")");
-        System.out.println();//Skips line
+            System.out.println("Project 1 : Point Tester");
+            System.out.println();//Skips line
+            System.out.println("Point 1: Point (x = " + point.getX() + ", " + point.getY() + ")");
+             System.out.println();//Skips line
+             point.setX(6.0);
+             point.setY(5.0);
+             System.out.println("Point 2: Point (x = " + point.getX() + ", " + point.getY() + ")");
+             System.out.println();//Skips line
 
         //Point 2
-        Point p2 = new Point(p1.getX(), p1.getY());
+        Point p2 = new Point(point.getX(), point.getY());
         // Restore the original coordinates of p1
-        p1.restoreOriginalCoordinates();
+        point.restoreOriginalCoordinates();
         //Distance between p1 and p2
 
-        System.out.println("Distance between Point 1 and Point 2: " + p1.distance(p2));
-        //System.out.println("Distance between Point 1 and Point 2: " + distance);
+        System.out.println("Distance between Point 1 and Point 2: " + point.distance(p2));
         // Shifting point1 along the x-axis
         System.out.println();//Skips line
         // Rotate the point by a specified angle (in radians)
@@ -103,6 +103,12 @@ public class Point {
         System.out.println("Rotated by PI/2");
         System.out.println();//Skips line
         System.out.println("Point Coordinates after Rotation: (" + p2.getX() + ", " + p2.getY() + ")");
+        System.out.println();//Skips line
+        // Shift the point
+        p2.shiftX(3.0);
+        p2.shiftY(4.0);
 
+        // Display coordinates after shifting
+        System.out.println("Point 2 Coordinates after Shifting: (" + p2.getX() + ", " + p2.getY() + ")");
     }
 }
